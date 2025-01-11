@@ -10,7 +10,7 @@ Interactive API documentation is available at:
 - Swagger UI: `/swagger/`
 - ReDoc: `/redoc/`
 
-### Authentication
+## Authentication
 
 The system uses JWT (JSON Web Tokens) for authentication. Only HR employees can access the system.
 

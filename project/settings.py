@@ -151,13 +151,13 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "https://ihr-system.netlify.app/",
+    "https://ihr-system.netlify.app",
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CSRF_TRUSTED_ORIGINS = [
+    "https://ihr-system.netlify.app",
+]
 
-CSRF_TRUSTED_ORIGINS=['https://hr-system-backend.vercel.app/', 'https://hr-system-backend.vercel.app/']
-
+CORS_ALLOW_ALL_ORIGINS = False
 
 AUTH_USER_MODEL = 'hr.Employee'

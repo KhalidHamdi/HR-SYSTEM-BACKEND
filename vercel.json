@@ -11,5 +11,24 @@
       "src": "/(.*)",
       "dest": "project/wsgi.py"
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",  
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://ihr-system.netlify.app" 
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Authorization, Content-Type"
+        }
+      ]
+    }
   ]
 }

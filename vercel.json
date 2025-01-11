@@ -6,19 +6,19 @@
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "project/wsgi.py"
+      "source": "/(.*)",
+      "destination": "project/wsgi.py"
     }
   ],
   "headers": [
     {
-      "source": "/(.*)",  
+      "source": "/(.*)",
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://ihr-system.netlify.app" 
+          "value": "https://ihr-system.netlify.app"
         },
         {
           "key": "Access-Control-Allow-Methods",
